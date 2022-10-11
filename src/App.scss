@@ -1,0 +1,463 @@
+$font-theme: black;
+$selected: rgb(179, 179, 179);
+$hover: rgb(255, 208, 122);
+
+#root {
+  height: 100%;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 100px;
+  height: 10vh;
+  color: $font-theme;
+  font-size: 16px;
+  box-shadow: 0 1px 5px rgb(141, 141, 141);
+
+  img {
+    height: 50px;
+    margin-right: 30px;
+  }
+
+  ul {
+    padding: 0;
+    margin: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    li {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0 30px;
+      height: 10vh;
+      &:hover {
+        background-color: $hover;
+        color: black;
+      }
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: $font-theme;
+  }
+
+  div {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.flex-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-container-row {
+  display: flex;
+  flex: 1;
+}
+
+.container-detail {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  p {
+    font-size: 25px;
+    margin: 10px 0;
+  }
+
+  div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  button {
+    border: none;
+    background-color: $hover;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    height: 70px;
+    width: 200px;
+    margin-top: 25px;
+
+    &:hover {
+      cursor: pointer;
+      background-color: $selected;
+    }
+  }
+}
+
+.header-detail {
+  font-weight: lighter;
+  font-size: 60px;
+  margin: 10px 0;
+  width: 500px;
+}
+
+.img-detail {
+  height: 500px;
+  margin: 10px 100px;
+}
+
+.center {
+  justify-content: center;
+}
+
+.home-div {
+  flex: 1;
+  overflow: hidden;
+
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  div {
+    color: white;
+    position: absolute;
+    top: 30%;
+    right: 15%;
+
+  }
+
+  h1 {
+    font-size: 50px;
+    font-weight: 300;
+  }
+
+  button {
+    float: right;
+    border: none;
+    height: 3em;
+    width: 8em;
+    font-size: 18px;
+    background-color: rgb(253, 253, 253);
+
+    &:hover {
+      background-color: $hover;
+      cursor: pointer;
+    }
+  }
+}
+
+ul li {
+  list-style: none;
+}
+
+.side-nav {
+  position: relative;
+  top: 130px;
+  margin: 0 30px;
+  padding: 0;
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  li {
+    padding: 15px 30px;
+
+    &:hover {
+      background-color: $hover;
+    }
+  }
+}
+
+.header-shop {
+  margin: 40px 0 0;
+  font-size: 40px;
+  font-weight: 100;
+  text-align: center;
+}
+
+.header-build {
+  font-size: 40px;
+  font-weight: 100;
+  margin: 20px 0 0;
+}
+
+.table {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: auto;
+}
+
+.table-build {
+  width: 1000px;
+  border-collapse: collapse;
+}
+
+.table-detail {
+  width: 1000px;
+  border-collapse: collapse;
+}
+
+caption {
+  font-size: 3em;
+  padding: 1em;
+}
+
+th {
+  text-align: left;
+  height: 70px;
+}
+
+tbody tr {
+  height: 100px;
+  border-bottom: 1px solid;
+  border-top: 1px solid;
+}
+
+.table-build td:nth-child(1) {
+  width: 150px;
+}
+
+.table-build td:nth-child(3) {
+  width: 450px;
+}
+
+.btn-cart {
+  height: 50px;
+  width: 130px;
+  margin: 25px;
+  border: none;
+  background-color: $hover;
+  font-size: 15px;
+  font-weight: bolder;
+
+  &:hover {
+    cursor: pointer;
+    background-color: $selected
+  }
+}
+
+.btn-add {
+  height: 40px;
+  width: 100px;
+  font-size: 15px;
+  font-weight: bolder;
+  border: none;
+  background-color: rgb(87, 87, 87);
+  color: white;
+
+  &:hover {
+    cursor: pointer;
+    background-color: rgb(145, 145, 145);
+  }
+}
+
+.fa-edit {
+  color: black;
+  
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.fa-trash:hover {
+  cursor: pointer;
+}
+
+td img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.items-container {
+  margin: 0;
+  display: flex;
+  text-align: center;
+  font-size: 10px;
+  padding: 15px 30px;
+  max-width: 950px;
+  flex-wrap: wrap;
+
+  img {
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+    object-fit: contain;
+
+    &:hover {
+      animation-duration: 0.55s;
+      animation-name: enlarge;
+      animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+      animation-fill-mode: forwards;
+    }
+  }
+
+  @keyframes enlarge {
+    to {
+      transform: scale(1.1);
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .item {
+    margin: 15px;
+
+    h1 {
+      font-size: 20px;
+      width: 200px
+    }
+  }
+}
+
+.modal {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgb(0,0,0,0.4);
+}
+
+.cart {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  background-color: white;
+  width: 500px;
+  height: 100%;
+  top: 0;
+  right: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  animation-duration: 0.6s;
+  animation-name: slidein;
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@keyframes slidein {
+
+  from {
+    right: -500px;
+  }
+
+  to {
+    right: 0;
+  }
+}
+
+.cart-header {
+  font-size: 50px;
+  font-weight: 500;
+  margin: 30px;
+}
+
+.checkout-btn {
+  padding: 15px 10px;
+  margin: 30px;
+  border: none;
+  background-color: $hover;
+  color: black;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+input[type='number'] {
+  width: 30px;
+  height: 20px;
+  text-align: right;
+  margin: 0 15px;
+}
+
+.item-list {
+  width: 100%;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  height: 150px;
+  margin: 30px;
+}
+
+.cart-detail {
+  flex: 1;
+  p {
+    margin: 0;
+  }
+
+  h1 {
+    margin: 0 0 10px;
+    font-size: 18px;
+  }
+}
+
+.cart-img {
+  height: 150px;
+  width: 150px;
+  object-fit: contain;
+  margin-right: 20px;
+}
+
+.cart-price {
+  margin: 0px 30px;
+}
+
+.close {
+  position: relative;
+  cursor: pointer;
+  top: 10px;
+  left: 30px;
+  font-size: 25px;
+}
+
+.fa-shopping-cart {
+  cursor: pointer;
+}
+
+#cart-quantity {
+  display: flex;
+  background-color: $hover;
+  color: black;
+  font-size: 20px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin: 0 3px;
+  justify-content: center;
+  align-items: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.selected {
+  background-color: $selected;
+}
+
+@media screen and (max-width: 600px) {
+  .cart {
+    width: 100%;
+  }
+}
