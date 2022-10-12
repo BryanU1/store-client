@@ -5,7 +5,7 @@ function Switches() {
   const [items, setItems] = useState([]);
 
   useEffect(() => {
-    const url = 'http://keyboard-store-api.herokuapp.com/api/category/6304078f6dc6c612f78d82a4';
+    const url = 'http://localhost:5000/api/category/6304078f6dc6c612f78d82a4';
     fetch(url)
       .then((res) => res.json())
       .then((json) => setItems(json.items))
