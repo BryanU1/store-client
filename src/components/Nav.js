@@ -21,7 +21,7 @@ function Nav(prop) {
       </div>
       <div className='nav-cart'>
         <div id='cart-quantity'>{prop.totalCount}</div>
-        <i className='bi bi-cart' onClick={openCart}></i>
+        <p onClick={openCart}>Cart</p>
       </div>
     </nav>
   );
