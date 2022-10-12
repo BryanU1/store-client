@@ -4,6 +4,8 @@ $hover: rgb(255, 208, 122);
 
 #root {
   height: 100%;
+  overflow: auto;
+  border-collapse: collapse;
 }
 
 .nav-bar {
@@ -195,16 +197,18 @@ ul li {
   display: flex;
   flex-direction: column;
   align-items: center;
-  overflow-x: auto;
+  align-self: center;
+  width: 80vw;
+  padding: 30px;
 }
 
 .table-build {
-  width: 1000px;
+  width: 100%;
   border-collapse: collapse;
 }
 
 .table-detail {
-  width: 1000px;
+  width: 100%x;
   border-collapse: collapse;
 }
 
@@ -213,9 +217,10 @@ caption {
   padding: 1em;
 }
 
-th {
+td, th {
   text-align: left;
   height: 70px;
+  padding: 10px;
 }
 
 tbody tr {
@@ -224,11 +229,23 @@ tbody tr {
   border-top: 1px solid;
 }
 
-.table-build td:nth-child(1) {
+.table-build th:nth-child(1) {
   width: 150px;
 }
 
-.table-build td:nth-child(3) {
+.table-build th:nth-child(2) {
+  width: 150px;
+}
+
+.table-build th:nth-child(3) {
+  width: 450px;
+}
+
+.table-detail th {
+  width: 150px;
+}
+
+.table-detail th:nth-child(2) {
   width: 450px;
 }
 
@@ -398,6 +415,7 @@ input[type='number'] {
   height: 20px;
   text-align: right;
   margin: 0 15px;
+  font-size: 15px;
 }
 
 .item-list {
@@ -470,5 +488,18 @@ input[type='number'] {
 @media screen and (max-width: 600px) {
   .cart {
     width: 100%;
+  }
+
+  .nav-bar {
+    padding: 0 20px;
+  }
+
+  .img-detail {
+    width: 350px;
+    height: 350px;
+  }
+
+  .header-detail {
+    width: 300px;
   }
 }
