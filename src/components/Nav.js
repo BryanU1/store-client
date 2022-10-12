@@ -21,7 +21,7 @@ function Nav(prop) {
       </div>
       <div className='nav-cart'>
         <div id='cart-quantity'>{prop.totalCount}</div>
-        <p onClick={openCart}>Cart</p>
+        <img src="~/src/images/cart.svg" onClick={openCart}></img>
       </div>
     </nav>
   );
