@@ -5,7 +5,7 @@ function Plate() {
   const [items, setItems] = useState([]);
 
   useEffect(() => {
-    const url = `http://keyboard-store-api.herokuapp.com/api/category/630407270f9c881261a89c36`;
+    const url = `https://keyboard-store-api.herokuapp.com/api/category/630407270f9c881261a89c36`;
     fetch(url)
       .then((res) => res.json())
       .then((json) => setItems(json.items))

@@ -5,7 +5,7 @@ function Keyboard() {
   const [items, setItems] = useState([]);
 
   useEffect(() => {
-    const url = `http://keyboard-store-api.herokuapp.com/api/category/62f4181eb6fa5ce4097d1f21`;
+    const url = `https://keyboard-store-api.herokuapp.com/api/category/62f4181eb6fa5ce4097d1f21`;
     fetch(url)
       .then((res) => res.json())
       .then((json) => setItems(json.items))

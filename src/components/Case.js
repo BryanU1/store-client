@@ -5,7 +5,7 @@ function Case() {
   const [items, setItems] = useState([]);
 
   useEffect(() => {
-    const url = 'http://keyboard-store-api.herokuapp.com/api/category/6304071f0f9c881261a89c32';
+    const url = 'https://keyboard-store-api.herokuapp.com/api/category/6304071f0f9c881261a89c32';
     fetch(url)
       .then((res) => res.json())
       .then((json) => setItems(json.items))

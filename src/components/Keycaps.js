@@ -5,7 +5,7 @@ function Keycaps() {
   const [items, setItems] = useState([]);
 
   useEffect(() => {
-    const url = 'http://keyboard-store-api.herokuapp.com/api/category/6304079b6dc6c612f78d82a8';
+    const url = 'https://keyboard-store-api.herokuapp.com/api/category/6304079b6dc6c612f78d82a8';
     fetch(url)
       .then((res) => res.json())
       .then((json) => setItems(json.items))

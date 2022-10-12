@@ -7,7 +7,7 @@ function CategoryDetail() {
   const [ items, setItems ] = useState([]);
 
   useEffect(() => {
-    const url = `http://keyboard-store-api.herokuapp.com/api/category/${params.id}`
+    const url = `https://keyboard-store-api.herokuapp.com/api/category/${params.id}`
     
     fetch(url)
       .then(response => response.json())

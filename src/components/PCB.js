@@ -5,7 +5,7 @@ function PCB() {
   const [items, setItems] = useState([]);
 
   useEffect(() => {
-    const url = `http://keyboard-store-api.herokuapp.com/api/category/630407726dc6c612f78d829c`;
+    const url = `https://keyboard-store-api.herokuapp.com/api/category/630407726dc6c612f78d829c`;
     fetch(url)
       .then((res) => res.json())
       .then((json) => setItems(json.items))

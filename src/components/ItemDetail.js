@@ -7,7 +7,7 @@ function ItemDetail(prop) {
   const [ quantity, setQuantity ] = useState(1);
 
   useEffect(() => {
-    const url = `http://keyboard-store-api.herokuapp.com/api/item/${params.id}`;
+    const url = `https://keyboard-store-api.herokuapp.com/api/item/${params.id}`;
     fetch(url)
       .then((res) => res.text())
       .then((text) => {

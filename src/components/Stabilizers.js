@@ -5,7 +5,7 @@ function Stabilizers() {
   const [items, setItems] = useState([]);
 
   useEffect(() => {
-    const url = 'http://keyboard-store-api.herokuapp.com/api/category/6304077c6dc6c612f78d82a0';
+    const url = 'https://keyboard-store-api.herokuapp.com/api/category/6304077c6dc6c612f78d82a0';
     fetch(url)
       .then((res) => res.json())
       .then((json) => setItems(json.items))
