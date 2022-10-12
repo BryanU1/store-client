@@ -15,11 +15,6 @@ $hover: rgb(255, 208, 122);
   font-size: 16px;
   box-shadow: 0 1px 5px rgb(141, 141, 141);
 
-  img {
-    height: 50px;
-    margin-right: 30px;
-  }
-
   ul {
     padding: 0;
     margin: 30px;
@@ -48,6 +43,15 @@ $hover: rgb(255, 208, 122);
   div {
     display: flex;
     align-items: center;
+  }
+}
+
+.img-cart {
+  height: 25px;
+  width: 25px;
+  
+  &:hover {
+    cursor: pointer;
   }
 }
 
@@ -258,15 +262,22 @@ tbody tr {
   }
 }
 
-.fa-edit {
+.bi-pencil-square {
   color: black;
+  height: 20px;
+  width: 20px;
   
   &:hover {
     cursor: pointer;
   }
 }
 
-.fa-trash:hover {
+.bi-trash {
+  height: 20px;
+  width: 20px;
+}
+
+.bi-trash:hover {
   cursor: pointer;
 }
 

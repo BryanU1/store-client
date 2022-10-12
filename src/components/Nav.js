@@ -8,7 +8,7 @@ function Nav(prop) {
     <nav className="nav-bar">
       <div>  
         <Link to="/">
-          <img src={require('../images/favicon.ico')}></img>
+          <img src={require('../images/favicon.ico')} className='nav-brand'></img>
         </Link>
         <ul>
           <Link to="/shop/keyboard">
@@ -21,7 +21,7 @@ function Nav(prop) {
       </div>
       <div className='nav-cart'>
         <div id='cart-quantity'>{prop.totalCount}</div>
-        <img src="~/src/images/cart.svg" onClick={openCart}></img>
+        <img src={require('../images/shopping-cart.png')} alt='Cart' className='img-cart' onClick={openCart}></img>
       </div>
     </nav>
   );

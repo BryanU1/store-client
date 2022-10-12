@@ -11,10 +11,6 @@
   font-size: 16px;
   box-shadow: 0 1px 5px rgb(141, 141, 141);
 }
-.nav-bar img {
-  height: 50px;
-  margin-right: 30px;
-}
 .nav-bar ul {
   padding: 0;
   margin: 30px;
@@ -40,6 +36,14 @@
 .nav-bar div {
   display: flex;
   align-items: center;
+}
+
+.img-cart {
+  height: 25px;
+  width: 25px;
+}
+.img-cart:hover {
+  cursor: pointer;
 }
 
 .flex-container {
@@ -234,14 +238,21 @@ tbody tr {
   background-color: rgb(145, 145, 145);
 }
 
-.fa-edit {
+.bi-pencil-square {
   color: black;
+  height: 20px;
+  width: 20px;
 }
-.fa-edit:hover {
+.bi-pencil-square:hover {
   cursor: pointer;
 }
 
-.fa-trash:hover {
+.bi-trash {
+  height: 20px;
+  width: 20px;
+}
+
+.bi-trash:hover {
   cursor: pointer;
 }
 
